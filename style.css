@@ -9,7 +9,7 @@ audio {
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url("/animation/animation/public/Dark_Sky_\(2679377610\).png");
+    background-image: url("./Dark_Sky_\(2679377610\).png");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -20,7 +20,7 @@ audio {
     height: 100px;
     width: 400%;
     display: block;
-    background-image: url(/animation/animation/public/road.jpg);
+    background-image: url("./road.jpg");
     position: absolute;
     bottom:0;
     left:0;
@@ -40,7 +40,7 @@ audio {
 .city{
     height: 250px;
     width: 300%;
-    background-image: url(/animation/animation/public/city.png);
+    background-image: url(./city.png);
     position: absolute;
     bottom:100px;
     left:0;
