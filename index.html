@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <audio id="background-audio" src="/animation/animation/public/А –  Гон конг.mp3" autoplay controls></audio>
+        <div class="highway"></div>
+        <div class="city"></div>
+        <div class="car">
+            <img src="/animation/animation/public/avto.png" alt="">
+            <div class="wheel">
+                <img src="/animation/animation/public/shina.png" class="back-wheel">
+                <img src="/animation/animation/public/shina.png" class="front-wheel">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded",() => {
+    const audio = document.getElementById("background-audio");
+    audio.play().catch(error => {
+        console.log("Autoplay blocked, waiting for user interaction");
+        document.body.addEventListener("click", () => audio.play(), {once: true});
+    });
+});
+</script>
+</html>
